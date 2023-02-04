@@ -1,15 +1,16 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
-import {overView} from './Components/overview/overview';
-
+import OverView from './Components/overview/overview';
+import About from './Components/About/About';
 
 function App() {
   return (
     <div>
        <Navbar />
        <Header />
-    <overView />
+  <OverView />
+  <About />
     </div>
   );
 }
