@@ -7,8 +7,7 @@ import ConvertAirTime from './Components/services/Services';
 import { PayBill } from './Components/services/Services';
 import { BuyData } from './Components/services/Services';
 import { BuyAirtime } from './Components/services/Services';
-
-
+import { FAQs } from './Components/FAQ/FAQs';
 function App() {
   return (
     <div>
@@ -20,6 +19,7 @@ function App() {
    <PayBill />
    <BuyData />
    <BuyAirtime />
+    <FAQs />
     </div>
   );
 }
