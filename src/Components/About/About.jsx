@@ -3,7 +3,7 @@ import logo  from './abtU.svg';
 
 const About = () => {
     return (
-        <div className="py-[50px]  bg-slate-50 mt-[50px] rounded-[10px]">
+        <div className="py-[50px]  bg-slate-50 mt-[50px] shadow-xl rounded-[50px]">
             <div className="">
                 <div className="">
                 <h1 className=" uppercase font-bold text-[50px] m-[20px] text-center">About Us</h1>
@@ -15,7 +15,7 @@ const About = () => {
                     <div>
                         <div className="max-w-[500px]">
                         <p className="text-[20px] font-semibold">Here There,</p>
-          <h2 className="font-bold text-[40px] mt-2 mb-2">We are AirtimeSeller</h2>
+          <h2 className="font-bold text-[25px] md:text-[40px] mt-2 mb-2">We are AirtimeSeller</h2>
          
           <p className="text-[20px] text-slate-600 mt-2 mb-2">
           AirtimeFlip makes it possible for you to convert
