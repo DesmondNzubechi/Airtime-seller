@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
 import OverView from './Components/overview/overview';
 import About from './Components/About/About';
+import ConvertAirTime from './Components/services/Services';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
        <Header />
   <OverView />
   <About />
+   <ConvertAirTime />
     </div>
   );
 }
