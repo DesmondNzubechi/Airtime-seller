@@ -4,6 +4,9 @@ import Header from './Components/Header/Header';
 import OverView from './Components/overview/overview';
 import About from './Components/About/About';
 import ConvertAirTime from './Components/services/Services';
+import { PayBill } from './Components/services/Services';
+import { BuyData } from './Components/services/Services';
+import { BuyAirtime } from './Components/services/Services';
 
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
   <OverView />
   <About />
    <ConvertAirTime />
+   <PayBill />
+   <BuyData />
+   <BuyAirtime />
     </div>
   );
 }
