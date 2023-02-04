@@ -4,7 +4,7 @@ import logoS from './Img/Girl.webp';
 
 const Header = () => {
     return (
-        <div className="pt-[150px] pb-[50px] px-[70px] overflow-x-hidden">
+        <div className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
             <div className="md:flex md:items-center md:justify-around gap-20">
             <div className="md:w-[600px]">
                 <h1 className="md:text-[40px] my-[10px] text-[30px] md:w-[400px]">Best platform for your <strong className="text-sky-500">Airtime</strong> in Nigeria</h1>
