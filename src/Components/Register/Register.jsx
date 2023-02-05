@@ -1,15 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Footer } from "../Footer/Footer";
+
+
 
 export const Register = () => {
+    
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+  
     return (
+        <>
         <div className="py-[50px] pt-[100px] bg-slate-50 flex justify-center">
          <div className="bg-sky-500- mt-5 p-3 rounded-xl">
-            <div className="my-[20px]">
+            <div className="my-[20px]" data-aos='fade-up' >
                 <h1 className="text-[30px] uppercase font-bold text-slate-600 ">Register Here</h1>
                 <p className="md:text-[20px] text-[17px] ">Sign up here and subscribe to our newsletter</p>
             </div>
-            <form action="">
+            <form action="" data-aos='fade-up' >
             <br />
     <input type="text" name="First Name" className="border rounded-xl w-full p-3 my-[10px] placeholder:text-[20px] outline-sky-500 placeholder:italic" placeholder="Input First Name" id="" />
     <br />
@@ -30,5 +42,7 @@ export const Register = () => {
   </div>
          </div>
         </div>
+        <Footer />
+        </>
     )
 }

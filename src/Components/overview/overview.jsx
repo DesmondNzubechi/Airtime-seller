@@ -3,11 +3,20 @@ import { BsCloudDownloadFill }  from 'react-icons/bs';
 import { RiCustomerService2Fill } from 'react-icons/ri';
 import { AiOutlineUsergroupAdd, AiFillStar }  from 'react-icons/ai';
 import { FcRating }  from 'react-icons/fc';
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 const OverView = () => {
+    
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+  
     return(
         <div className=' bg-white mx-[20px] rounded-xl px-[10px] pt-[20px] pb-[20px]'>
-           <div className='md:flex  md:flex-row sm:flex-col gap-[40px] justify-center items-center'>
+           <div className='md:flex  md:flex-row sm:flex-col gap-[40px] justify-center items-center' data-aos='fade-up'>
             <div className='flex justify-around   md:gap-[40px] my-5'>
             <div className='flex flex-col h-[150px] min-w-[130px] md:min-w-[170px] hover:bg-blue-300 bg-sky-500 justify-center px-[20px]  items-center shadow-xl  rounded-[10px] p-[10px]'>
                 <AiFillStar className='text-white rounded-full p-1 bg-sky-500 text-[50px]'/>

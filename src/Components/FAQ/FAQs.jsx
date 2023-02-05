@@ -1,12 +1,21 @@
   import React from "react";
 import { FAQ } from "./FAQ";
 import { Whychoose } from "../WhyChooseUs/ChooseUs";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Footer } from "../Footer/Footer";
 
   export const FAQs = () => {
 
+    useEffect(function () {
+      Aos.init({ duration: 1000 });
+    }, []);
+
     return (
+      <>
         <div className="px-[30px] pt-[100px] py-[50px]">
-        <div className="my-[30px] ">
+        <div className="my-[30px] " data-aos='fade-up'>
           <h2 className="font-semibold text-[20px] text-slate-500  md:text-[25px] ">What You Should Know</h2>
           <h1 className="text-[25px] font-bold md:text-[40px] "><span className="text-sky-500  "> Frequently Asked</span>  Question (FAQ)</h1>
           </div> 
@@ -68,6 +77,9 @@ import { Whychoose } from "../WhyChooseUs/ChooseUs";
             />
             </div>
             <Whychoose />
+           
             </div>
+            <Footer />
+            </>
     )
   }

@@ -1,13 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Footer } from "../Footer/Footer";
+
+
 
 export const Login = () => {
+    
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+  
     const [isPassword, setIsPassword] = useState('password');
     return(
+        <>
         <div className="px-[20px] pt-[140px] pb-[50px] flex justify-center ">
    <div>
-<div>
+<div data-aos='fade-up' >
     <h1 className="uppercase font-bold md:text-[40px] text-[25px] text-slate-600">Sign In Here</h1>
     <p className="text-slate-500 md:text-[25px] text-[20px]">Enter Your Details Below</p>
 
@@ -28,5 +40,7 @@ export const Login = () => {
 </div>
    </div>
         </div>
+        <Footer />
+        </>
     )
 }

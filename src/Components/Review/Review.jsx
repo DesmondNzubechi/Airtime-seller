@@ -2,6 +2,9 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { AiOutlineUser } from 'react-icons/ai';
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,6 +16,11 @@ import "./style.css";
 import { Pagination } from "swiper";
 
 export default function Review() {
+    
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+  
   return (
     <>
       <Swiper
@@ -37,6 +45,7 @@ export default function Review() {
         }}
         modules={[Pagination]}
         className=""
+        data-aos='fade-up' 
       >
         <SwiperSlide className=" rounded-xl mb-[40px] shadow-xl">
             <div className="py-[20px] px-[15px]">

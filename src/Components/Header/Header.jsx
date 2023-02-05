@@ -3,13 +3,23 @@ import logoS from './Img/Girl.webp';
 import OverView from "../overview/overview";
 import { Whychoose } from "../WhyChooseUs/ChooseUs";
 import { OurVision } from "../About/Vision";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { Footer } from "../Footer/Footer";
+
 
 const Header = () => {
+    
+    useEffect(function () {
+        Aos.init({ duration: 1000 });
+      }, []);
+
     return (
         <>
         <div className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
             <div className="md:flex md:items-center md:justify-around gap-20">
-            <div className="md:w-[600px]">
+            <div data-aos='fade-up' className="md:w-[600px]">
                 <h1 className="md:text-[40px] my-[10px] text-[30px] md:w-[400px]">Best platform for your <strong className="text-sky-500">Airtime</strong> in Nigeria</h1>
                 <p className="my-[20px] text-[20px]">
                 We make it easy for you to convert airtime to cash,
@@ -23,7 +33,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className="md:w-[500px] ">
+            <div data-aos='fade-up' className="md:w-[500px] ">
                 <img className="  rounded-full " src={logoS} alt="" />
             </div>
             </div>
@@ -31,6 +41,7 @@ const Header = () => {
         <OverView />
         <OurVision />
         <Whychoose />
+        <Footer />
         </>
     )
 };

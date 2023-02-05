@@ -13,7 +13,7 @@ import { Login } from './Components/Register/Login';
 import { Reviewers } from './Components/Review/Reviewer';
 import { Register } from './Components/Register/Register';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-
+import { Footer } from './Components/Footer/Footer';
 function App() {
   return (
     <BrowserRouter>

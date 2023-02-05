@@ -47,7 +47,7 @@ const [isServices, setIsServices] = useState(false);
         </div>
         <div className="link bg-sky-500" style={{left:isNav}}>
      <ul className="" >
-        <li><Link to='/' className="decoration-none    text-xl hover:text-white">Home</Link> </li>
+        <li onClick={closeNav}><Link to='/' className="decoration-none    text-xl hover:text-white">Home</Link> </li>
         <li  >
             <a className="decoration-none  cursor-pointer   text-xl hover:text-white flex flex-row items-center" onClick={showServices} ><span>Product</span><span className="font-bold text-[25px]">{isArrow}</span></a>
           {isServices && <ul className="flex flex-col absolute  bg-slate-600 p-5 text-white border-slate-700 rounded ">
@@ -65,8 +65,8 @@ const [isServices, setIsServices] = useState(false);
      </ul>
         
         <div className="flex gap-3 log">
-            <Link to='/login' className="text-[20px] uppercase hover:text-white hover:bg-sky-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-dark bg-white ">Login</Link>
-            <Link to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500">Register</Link>
+            <Link to='/login' className="text-[20px] uppercase hover:text-white hover:bg-sky-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-dark bg-white " onClick={closeNav}>Login</Link>
+            <Link to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</Link>
         </div>
         </div>
         <div className="Ic">
