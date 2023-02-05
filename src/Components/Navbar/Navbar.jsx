@@ -60,18 +60,18 @@ const [isServices, setIsServices] = useState(false);
         </li>
         <li onClick={closeNav}><Link to='/about' className="decoration-none     text-xl hover:text-white" >About</Link></li>
         <li onClick={closeNav}><Link to='/review' className="decoration-none     text-xl hover:text-white" >Reviews</Link></li>
-        <li onClick={closeNav}><Link to='/contact' className="decoration-none     text-xl hover:text-white" href="http://">Contact Us</Link></li>
+        <li onClick={closeNav}><Link to='/contact' className="decoration-none     text-xl hover:text-white" href="http://">Contacts</Link></li>
         <li onClick={closeNav}><Link to='/faq'className="decoration-none     text-xl hover:text-white" href="http://">FAQs</Link></li>
      </ul>
         
         <div className="flex gap-3 log">
-            <Link to='/login' className="text-[20px] uppercase hover:text-white hover:bg-sky-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-dark bg-white " onClick={closeNav}>Login</Link>
+            <Link to='/login' className="text-[20px] text-center uppercase hover:text-white hover:bg-sky-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-dark bg-white " onClick={closeNav}>Login</Link>
             <Link to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</Link>
         </div>
         </div>
         <div className="Ic">
-          { isOpen && <RxHamburgerMenu className="text-[50px]"  onClick={openNav}/>}
-           {isClose && <HiXMark className="text-[50px]" onClick={closeNav}/>}
+          { isOpen && <RxHamburgerMenu className="text-[40px]"  onClick={openNav}/>}
+           {isClose && <HiXMark className="text-[40px]" onClick={closeNav}/>}
         </div>
      </nav>
     )

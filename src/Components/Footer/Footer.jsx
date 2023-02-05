@@ -51,9 +51,9 @@ export const Footer = () => {
     <h1 className="text-slate-100 font-bold text-[25px]">NewsLetter</h1>
     <p className="text-slate-500 text-[17px] pt-[20px] max-w-[400px]">Get notified of all our premium discounts and promos. We will also notify
 you from time to time when we make updates to serve you better.</p>
-<form action="" className="bg-white flex flex-row justify-between p-2 rounded  mt-[20px] ">
-    <input type="text" className="bg-none mt-[20px]  outline-none border-none" placeholder="nzubestdesmond@gmail.com" />
-    <button type="submit" className="bg-slate-900 text-white px-1 rounded shadow-xl text-[20px]">Subscribe</button>
+<form action="" className="bg-white max-w-[400px] flex flex-row justify-between p-2 rounded  mt-[20px] ">
+    <input type="text"  className="max-w-[100%] bg-none mt-[20px]  outline-none border-none" placeholder="nzubestdesmond@gmail.com" />
+    <button type="submit" className="bg-slate-900 text-white px-1 rounded shadow-xl  md:text-[20px]">Subscribe</button>
 </form>
 </div>
 </div>
@@ -62,8 +62,8 @@ you from time to time when we make updates to serve you better.</p>
        <hr />
       
           <div className="flex md:flex-row flex-col gap-3 items-center justify-around mt-[20px]">
-            <p className="flex flex-row items-center gap-1 text-slate-400 text-[18px]">Website built out of <span className="text-red-500 text-[30px]"><AiTwotoneHeart /></span> by <a className="uppercase font-semibold text-sky-500 italic" href="https://nzubechukwu.netlify.app">Nzubechukwu</a> </p>
-            <p className="text-[20px] text-slate-400">&copy; AirtimeSeller 2023</p>
+            <p className="flex flex-row items-center gap-1 text-slate-400 text-[12] md:text-[18px]">Website built out of <span className="text-red-500 text-[20px] md:text-[30px]"><AiTwotoneHeart /></span> by <a className="uppercase font-semibold text-sky-500 italic" href="https://nzubechukwu.netlify.app">Nzubechukwu</a> </p>
+            <p className="md:text-[20px] text-[15px] text-slate-400">&copy; AirtimeSeller 2023</p>
           </div>
         </footer>
     )
