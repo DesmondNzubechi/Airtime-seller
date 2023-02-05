@@ -8,6 +8,7 @@
    right: 0;
    width: 100%;
    overflow-x: none !important;
+   z-index: 1000;
 }
 .link{
     display: flex;

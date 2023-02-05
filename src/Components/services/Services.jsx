@@ -1,5 +1,6 @@
 import React from "react";
 import tran from './tran.svg';
+import { Whychoose } from "../WhyChooseUs/ChooseUs";
 
 
 const ConvertAirTime = () => {
@@ -22,12 +23,13 @@ const ConvertAirTime = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter airtime amount for conversion</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[30px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
     </div>
     <div>
         <img src={tran} className='w-[300px] ' alt="" />
     </div>
   </div>
+  <Whychoose />
 </div>
     )
 };
@@ -54,12 +56,13 @@ export const BuyData = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter amount of data that you are buying</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[30px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
     </div>
     <div>
         <img src={tran} className='w-[300px] ' alt="" />
     </div>
   </div>
+  <Whychoose />
 </div>
     )
 };
@@ -85,12 +88,13 @@ export const BuyAirtime = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter airtime amount</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[30px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
     </div>
     <div>
         <img src={tran} className='w-[300px] ' alt="" />
     </div>
   </div>
+  <Whychoose />
 </div>
     )
 };
@@ -115,12 +119,13 @@ export const PayBill = () => {
             <option value="NEPA">NEPA</option>
         </select>
         </div>
-       <button className="bg-sky-500 text-white font-semibold text-[30px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
     </div>
     <div>
         <img src={tran} className='w-[300px] ' alt="" />
     </div>
   </div>
+  <Whychoose />
 </div>
     )
 };

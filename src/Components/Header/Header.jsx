@@ -1,9 +1,12 @@
 import React from "react";
 import logoS from './Img/Girl.webp';
-
+import OverView from "../overview/overview";
+import { Whychoose } from "../WhyChooseUs/ChooseUs";
+import { OurVision } from "../About/Vision";
 
 const Header = () => {
     return (
+        <>
         <div className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
             <div className="md:flex md:items-center md:justify-around gap-20">
             <div className="md:w-[600px]">
@@ -25,6 +28,10 @@ const Header = () => {
             </div>
             </div>
         </div>
+        <OverView />
+        <OurVision />
+        <Whychoose />
+        </>
     )
 };
 

@@ -1,10 +1,11 @@
   import React from "react";
 import { FAQ } from "./FAQ";
+import { Whychoose } from "../WhyChooseUs/ChooseUs";
 
   export const FAQs = () => {
 
     return (
-        <div className="px-[30px] py-[50px]">
+        <div className="px-[30px] pt-[100px] py-[50px]">
         <div className="my-[30px] ">
           <h2 className="font-semibold text-[20px] text-slate-500  md:text-[25px] ">What You Should Know</h2>
           <h1 className="text-[25px] font-bold md:text-[40px] "><span className="text-sky-500  "> Frequently Asked</span>  Question (FAQ)</h1>
@@ -66,6 +67,7 @@ import { FAQ } from "./FAQ";
                
             />
             </div>
+            <Whychoose />
             </div>
     )
   }
