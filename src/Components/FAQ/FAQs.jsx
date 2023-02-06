@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import { Footer } from "../Footer/Footer";
 
   export const FAQs = () => {
-
+ //AOS ANIMATION CODER
     useEffect(function () {
       Aos.init({ duration: 1000 });
     }, []);

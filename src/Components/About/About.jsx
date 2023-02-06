@@ -6,10 +6,12 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const About = () => {
       
     useEffect(function () {
+         //AOS ANIMATION CODE
         Aos.init({ duration: 1000 });
       }, []);
 
@@ -30,11 +32,11 @@ const About = () => {
           <h2 className="font-bold text-[25px] md:text-[40px] mt-2 mb-2">We are AirtimeSeller</h2>
          
           <p className="text-[20px] text-slate-600 mt-2 mb-2">
-          AirtimeFlip makes it possible for you to convert
+          AirtimeSeller makes it possible for you to convert
            airtime to cash, Purchase data at cheap price, 
            Topup your airtime and paybills.
           </p>
-          <button className="bg-sky-500 pt-1 pb-1 hover:bg-white hover:text-sky-500 pl-2 pr-2 text-[20px] rounded uppercase font-semibold shadow-xl my-[20px]">Contact Us</button>
+          <Link to='/contact' className="bg-sky-500 pt-1 pb-1 hover:bg-white hover:text-sky-500 pl-2 pr-2 text-[20px] rounded uppercase font-semibold shadow-xl my-[20px]">Contact Us</Link>
                         </div>
                         
                     </div>

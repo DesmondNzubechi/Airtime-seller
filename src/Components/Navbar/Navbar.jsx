@@ -8,11 +8,17 @@ import './Navbar.css';
 
 
 const Navbar = () => {
+    //VARIABLE FOR SHOWING SERVICES LINK
 const [isServices, setIsServices] = useState(false);
+//VARIABLE FOR HIDDEN NAVBAR ICON
     const [isOpen, setIsOpen] = useState(true);
+    //VARIABLE FOR SHOWING CLOSE ICON
     const [isClose, setIsClose] = useState(false);
+    //VARIABLE FOR OPENING AND CLOSING NAVBAR
     const [isNav, setIsNav] = useState("-1000px");
+    //FOR SHOWING DROPUP AND DROPDOWN ARROW
     const [isArrow, setIsArrow] = useState(<IoMdArrowDropdown />)
+    //FUNCTION FOR DISPLAYING SERVICES LINK
     const showServices = () => {
         if (!isServices) {
             setIsServices(true);
@@ -22,18 +28,20 @@ const [isServices, setIsServices] = useState(false);
             setIsArrow(<IoMdArrowDropdown />)
         }
     }
+     //FUNCTION FOR  HIDING SERVICES LINK
         const hideServicesLink = () => {
            
             setIsArrow(<IoMdArrowDropdown />)
                 setIsServices(false)
           
         }
-    
+     //FUNCTION FOR DISPLAYING NAVBAR LINK
     const openNav = () => {
         setIsClose(true);
         setIsOpen(false);
         setIsNav('0');
     };
+    //FUNCTION FOR HIDING NAVBAR LINK
     const closeNav = () => {
         setIsClose(false);
         setIsOpen(true);

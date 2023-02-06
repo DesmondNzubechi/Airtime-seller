@@ -7,19 +7,21 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
-    
+    //AOS ANIMATION CODER
     useEffect(function () {
         Aos.init({ duration: 1000 });
       }, []);
 
     return (
         <>
-        <div className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
+        <div data-aos='fade-up' className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
             <div className="md:flex md:items-center md:justify-around gap-20">
-            <div data-aos='fade-up' className="md:w-[600px]">
+            <div >
+            <div  className="md:w-[600px]">
                 <h1 className="md:text-[40px] my-[10px] text-[30px] md:w-[400px]">Best platform for your <strong className="text-sky-500">Airtime</strong> in Nigeria</h1>
                 <p className="my-[20px] text-[20px]">
                 We make it easy for you to convert airtime to cash,
@@ -29,13 +31,16 @@ const Header = () => {
                     payment processing system you’ll find.
                 </p>
                 <div className="my-[30px]" >
-                    <button className=" shadow-xl  py-1 px-2 text-[30px] rounded-[7px] bg-sky-500 text-slate-700">Get Started</button>
+                    <Link to='/register' className=" shadow-xl  py-1 px-2 text-[30px] rounded-[7px] bg-sky-500 text-slate-700">Get Started</Link>
                 </div>
-
+</div>
             </div>
-            <div data-aos='fade-up' className="md:w-[500px] ">
-                <img className="  rounded-full " src={logoS} alt="" />
+            <div data-aos=''>
+            <div  className="md:w-[500px] ">
+                <img  className="  rounded-full " src={logoS} alt="" />
             </div>
+            </div>
+            
             </div>
         </div>
         <OverView />

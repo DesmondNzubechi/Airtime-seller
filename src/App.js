@@ -14,6 +14,7 @@ import { Reviewers } from './Components/Review/Reviewer';
 import { Register } from './Components/Register/Register';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { Footer } from './Components/Footer/Footer';
+import { Contact } from './Components/Contact/Contact';
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
       <Route path='/faq' element={<FAQs />} />
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
+      <Route path='/contact' element={<Contact />} />
       <Route path='/convert' element={<ConvertAirTime />} />
       <Route path='/airtime' element={<BuyAirtime />} />
       <Route path='/data' element={<BuyData/>} />

@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
  export const FAQ = (props) => {
-
+ //AOS ANIMATION CODER
    
    useEffect(function () {
       Aos.init({ duration: 1000 });
