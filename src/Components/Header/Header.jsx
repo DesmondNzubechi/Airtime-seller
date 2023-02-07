@@ -19,11 +19,11 @@ const Header = () => {
     return (
         <>
         <div data-aos='fade-up' className="pt-[150px] pb-[50px] px-[40px] overflow-x-hidden">
-            <div className="md:flex md:items-center md:justify-around gap-20">
+            <div className="md:flex md:items-center md:justify-center gap-20">
             <div >
             <div  className="md:w-[600px]">
-                <h1 className="md:text-[40px] my-[10px] text-[30px] md:w-[400px]">Best platform for your <strong className="text-sky-500">Airtime</strong> in Nigeria</h1>
-                <p className="my-[20px] text-[20px]">
+                <h1 className="md:text-[40px] text-[30px] my-[10px] text-[30px] md:w-[400px]">Best platform for your <strong className="text-sky-500">Airtime</strong> in Nigeria</h1>
+                <p className="my-[20px] md:text-[20px] text-[17px]">
                 We make it easy for you to convert airtime to cash,
                  buy airtime and data instantly or pay those bills.
                   We have got you covered. AirtimeSeller is the one-stop hub

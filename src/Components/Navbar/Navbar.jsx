@@ -51,7 +51,7 @@ const [isServices, setIsServices] = useState(false);
     return (
      <nav className="navi bg-sky-500 gap-10 p-5 shadow-xl  ">
         <div className="relative z-10">
-            <h1 className="uppercase font-bold text-[25px] text-slate">Airtime<span className="text-white">seller</span></h1>
+            <h1 className="uppercase font-bold text-[15px] md:text-[17px] xl:text-[20px] text-slate">Airtime<span className="text-white">seller</span></h1>
         </div>
         <div className="link bg-sky-500" style={{left:isNav}}>
      <ul className="" >
@@ -73,8 +73,8 @@ const [isServices, setIsServices] = useState(false);
      </ul>
         
         <div className="flex gap-3 log">
-            <a href="/login" to='/login' className="text-[20px] text-center uppercase hover:text-white hover:bg-sky-700 shadow-xl  px-5 py-1 rounded-[5px] w-fit text-dark bg-white " onClick={closeNav}>Login</a>
-            <a href="/register" to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</a>
+            <a href="/login" to='/login' className="xl:text-[20px] md:text-[15px] text-center uppercase hover:text-white hover:bg-sky-700 shadow-xl  px-5 py-1 rounded-[5px] w-fit text-dark bg-white " onClick={closeNav}>Login</a>
+            <a href="/register" to='/register' className="xl:text-[20px] md:text-[15px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</a>
         </div>
         </div>
         <div className="Ic">

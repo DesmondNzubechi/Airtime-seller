@@ -17,7 +17,7 @@ export const Login = () => {
     const [isPassword, setIsPassword] = useState('password');
     return(
         < >
-        <div className="px-[20px] pt-[140px] pb-[50px] flex justify-center min-[100vh]">
+        <div className="px-[20px] pt-[140px] pb-[50px] flex justify-center min-h-[100vh]">
    <div>
 <div data-aos='fade-up' >
     <h1 className="uppercase font-bold md:text-[40px] text-[25px] text-slate-600">Sign In Here</h1>
