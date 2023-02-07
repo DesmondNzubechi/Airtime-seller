@@ -36,7 +36,7 @@ const Header = () => {
 </div>
             </div>
             <div data-aos=''>
-            <div  className="md:w-[500px] ">
+            <div  className="md:max-w-[500px] ">
                 <img  className="  rounded-full " src={logoS} alt="" />
             </div>
             </div>

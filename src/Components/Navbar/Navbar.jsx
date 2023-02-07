@@ -51,7 +51,7 @@ const [isServices, setIsServices] = useState(false);
     return (
      <nav className="navi bg-sky-500 gap-10 p-5 shadow-xl  ">
         <div className="relative z-10">
-            <h1 className="uppercase font-bold text-[15px] md:text-[17px] xl:text-[20px] text-slate">Airtime<span className="text-white">seller</span></h1>
+            <h1 className="uppercase font-bold text-[20px] md:text-[17px] xl:text-[20px] text-slate">Airtime<span className="text-white">seller</span></h1>
         </div>
         <div className="link bg-sky-500" style={{left:isNav}}>
      <ul className="" >
