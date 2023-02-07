@@ -15,7 +15,7 @@ export const Register = () => {
   
     return (
         <>
-        <div className="py-[50px] pt-[100px] bg-slate-50 flex justify-center">
+        <div className="py-[50px] pt-[100px] bg-slate-50 flex justify-center min-h-[100vh]">
          <div className="bg-sky-500- mt-5 p-3 rounded-xl">
             <div className="my-[20px]" data-aos='fade-up' >
                 <h1 className="text-[30px] uppercase font-bold text-slate-600 ">Register Here</h1>
