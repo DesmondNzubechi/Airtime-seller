@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 
 const ConvertAirTime = () => {
@@ -33,7 +34,7 @@ const ConvertAirTime = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter airtime amount for conversion</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <Link to='/login' className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</Link>
     </div>
     <div data-aos='fade-up' >
         <img src={tran} className='w-[300px] ' alt="" />
@@ -74,7 +75,7 @@ export const BuyData = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter amount of data that you are buying</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <Link to='/login' className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</Link>
     </div>
     <div data-aos='fade-up' >
         <img src={tran} className='w-[300px] ' alt="" />
@@ -114,7 +115,7 @@ export const BuyAirtime = () => {
    <h2 className="font-semibold text-[20px] my-1 ">Enter airtime amount</h2>
    <input type="text" className="w-full border rounded p-1 outline-0" name="Amount" id="" placeholder="Enter Amount" />
        </div>
-       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+       <Link to='/login' className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</Link>
     </div>
     <div data-aos='fade-up' >
         <img src={tran} className='w-[300px] ' alt="" />
@@ -153,7 +154,7 @@ export const PayBill = () => {
             <option value="NEPA">NEPA</option>
         </select>
         </div>
-       <button className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</button>
+        <Link to='/login' className="bg-sky-500 text-white font-semibold text-[20px] py-1 px-2 rounded shadow-xl ">Proceed</Link>
     </div>
     <div>
         <img src={tran} className='w-[300px] ' alt="" />

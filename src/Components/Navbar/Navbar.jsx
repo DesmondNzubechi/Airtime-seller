@@ -57,24 +57,24 @@ const [isServices, setIsServices] = useState(false);
      <ul className="" >
         <li onClick={closeNav}><Link to='/' className="decoration-none    text-xl hover:text-white">Home</Link> </li>
         <li  >
-            <a className="decoration-none  cursor-pointer   text-xl hover:text-white flex flex-row items-center" onClick={showServices} ><span>Product</span><span className="font-bold text-[25px]">{isArrow}</span></a>
+            <a className="decoration-none  cursor-pointer   text-xl hover:text-white flex flex-row items-center" onClick={showServices} ><span>Services</span><span className="font-bold text-[25px]">{isArrow}</span></a>
           {isServices && <ul className="flex flex-col absolute  bg-slate-600 p-5 text-white border-slate-700 rounded ">
-                <li onClick={closeNav} className="text-[20px]"><Link to='/convert' onClick={hideServicesLink}>Convert Airtime</Link></li>
-                <li onClick={closeNav} className="text-[20px]"><Link to='/airtime' onClick={hideServicesLink}>Buy Airtime</Link></li>
-                <li onClick={closeNav} className="text-[20px]"><Link to='/data' onClick={hideServicesLink}>Buy Data</Link></li>
-                <li onClick={closeNav} className="text-[20px]"><Link to='/bill' onClick={hideServicesLink}>Pay Bill</Link></li>
+                <li onClick={closeNav} className="text-[20px]"><a href="/convert" to='/convert' onClick={hideServicesLink}>Convert Airtime</a></li>
+                <li onClick={closeNav} className="text-[20px]"><a href="/airtime" to='/airtime' onClick={hideServicesLink}>Buy Airtime</a></li>
+                <li onClick={closeNav} className="text-[20px]"><a href="/data" to='/data' onClick={hideServicesLink}>Buy Data</a></li>
+                <li onClick={closeNav} className="text-[20px]"><a href="/bill" to='/bill' onClick={hideServicesLink}>Pay Bill</a></li>
             </ul>
             }
         </li>
-        <li onClick={closeNav}><Link to='/about' className="decoration-none     text-xl hover:text-white" >About</Link></li>
-        <li onClick={closeNav}><Link to='/review' className="decoration-none     text-xl hover:text-white" >Reviews</Link></li>
-        <li onClick={closeNav}><Link to='/contact' className="decoration-none     text-xl hover:text-white" href="http://">Contacts</Link></li>
-        <li onClick={closeNav}><Link to='/faq'className="decoration-none     text-xl hover:text-white" href="http://">FAQs</Link></li>
+        <li onClick={closeNav}><a href="/about" to='/about' className="decoration-none     text-xl hover:text-white" >About</a></li>
+        <li onClick={closeNav}><a href="/review" to='/review' className="decoration-none     text-xl hover:text-white" >Reviews</a></li>
+        <li onClick={closeNav}><a href='/contact' to='/contact' className="decoration-none     text-xl hover:text-white" >Contacts</a></li>
+        <li onClick={closeNav}><a href='/faq' to='/faq'className="decoration-none     text-xl hover:text-white" >FAQs</a></li>
      </ul>
         
         <div className="flex gap-3 log">
-            <Link to='/login' className="text-[20px] text-center uppercase hover:text-white hover:bg-sky-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-dark bg-white " onClick={closeNav}>Login</Link>
-            <Link to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</Link>
+            <a href="/login" to='/login' className="text-[20px] text-center uppercase hover:text-white hover:bg-sky-700 shadow-xl  px-5 py-1 rounded-[5px] w-fit text-dark bg-white " onClick={closeNav}>Login</a>
+            <a href="/register" to='/register' className="text-[20px] uppercase hover:text-dark hover:bg-slate-700 shadow-xl w-[120px] px-3 py-1 rounded-[5px] text-white bg-slate-500" onClick={closeNav}>Register</a>
         </div>
         </div>
         <div className="Ic">
