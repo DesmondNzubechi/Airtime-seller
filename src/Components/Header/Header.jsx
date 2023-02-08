@@ -31,7 +31,7 @@ const Header = () => {
                     payment processing system you’ll find.
                 </p>
                 <div className="my-[30px]" >
-                    <Link to='/register' className=" shadow-xl  py-1 px-2 text-[30px] rounded-[7px] bg-slate-900 text-white">Get Started</Link>
+                    <Link to='/register' className=" shadow-xl  py-1 px-5 text-[30px] rounded-[7px] bg-slate-900 text-white">Get Started</Link>
                 </div>
 </div>
             </div>
