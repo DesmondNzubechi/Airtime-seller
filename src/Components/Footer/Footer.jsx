@@ -62,7 +62,7 @@ you from time to time when we make updates to serve you better.</p>
        <hr />
       
           <div className="flex md:flex-row flex-col gap-3 items-center justify-around mt-[20px]">
-            <p className="flex flex-row items-center gap-1 text-slate-400 text-[12] md:text-[18px]">Website built out of <span className="text-red-500 text-[20px] md:text-[30px]"><AiTwotoneHeart /></span> by <a className="uppercase font-semibold text-sky-500 italic" href="https://nzubechukwu.netlify.app">Nzubechukwu</a> </p>
+            <p className="flex flex-row items-center gap-1 text-slate-400 text-[12] md:text-[18px]">Website built out of <span className="text-red-500 text-[20px] md:text-[30px]"><AiTwotoneHeart /></span> by <a className="uppercase font-semibold text-sky-500 italic" href="https://nzubechukwu.com">Nzubechukwu</a> </p>
             <p className="md:text-[20px] text-[15px] text-slate-400">&copy; AirtimeSeller 2023</p>
           </div>
         </footer>
